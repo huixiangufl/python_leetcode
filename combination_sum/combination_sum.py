@@ -31,9 +31,8 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         candidates.sort()
-        combination = []
         combinations = []
-        self.dfs(candidates, target, combination, combinations)
+        self.dfs(candidates, target, [], combinations)
         return combinations
     
     def dfs(self, candidates, target, combination, combinations):
